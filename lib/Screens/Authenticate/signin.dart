@@ -25,8 +25,8 @@ Text("Sign In")
         child: Column(
           children: <Widget>[
             ElevatedButton(
-                onPressed: null,
-                child: Text(""))
+                onPressed: () async {},
+                child: Text("Sign IN as Guest"))
 
           ],
         ),

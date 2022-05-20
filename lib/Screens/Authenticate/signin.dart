@@ -14,6 +14,12 @@ class _SinginState extends State<Singin> {
  backgroundColor: Colors.lightBlueAccent ,
       appBar: AppBar(
 backgroundColor: Colors.lightBlue,
+        elevation: 2.0,
+        title: Row(
+          children:<Widget> [
+
+          ],
+        ),
       ),
     );
   }

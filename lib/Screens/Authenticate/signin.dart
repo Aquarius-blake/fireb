@@ -11,7 +11,10 @@ class _SinginState extends State<Singin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+ backgroundColor: Colors.lightBlueAccent ,
+      appBar: AppBar(
 
+      ),
     );
   }
 }

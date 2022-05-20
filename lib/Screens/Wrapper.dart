@@ -1,3 +1,4 @@
+import 'package:fire/Screens/Home/home.dart';
 import 'package:flutter/material.dart';
 
 class Wrapper extends StatelessWidget {
@@ -5,6 +6,8 @@ class Wrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+
+    //todo:return home or auth
+    return Home();
   }
 }

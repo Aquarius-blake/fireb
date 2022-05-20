@@ -1,3 +1,4 @@
+import 'package:fire/Screens/Authenticate/authenticate.dart';
 import 'package:fire/Screens/Home/home.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,6 @@ class Wrapper extends StatelessWidget {
   Widget build(BuildContext context) {
 
     //todo:return home or authenticate
-    return Home();
+    return Authenticate();
   }
 }

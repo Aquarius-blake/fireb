@@ -6,6 +6,16 @@ class AuthService{
 
   //sign in as guest
 
+Future Signguest() async{
+  try{
+
+  }catch(e){
+
+  }
+
+}
+
+
 
   //sign in with email
 

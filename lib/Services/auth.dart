@@ -7,6 +7,7 @@ class AuthService{
   //sign in as guest
 
 Future Signguest() async{
+
   try{
      UserCredential result= await _auth.signInAnonymously();
         User? user = result.user;

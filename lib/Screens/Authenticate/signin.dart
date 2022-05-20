@@ -17,7 +17,7 @@ backgroundColor: Colors.lightBlue,
         elevation: 2.0,
         title: Row(
           children:<Widget> [
-
+Text("Sign In")
           ],
         ),
       ),

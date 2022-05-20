@@ -8,7 +8,7 @@ class AuthService{
 
 Future Signguest() async{
   try{
-
+      await _auth.signInAnonymously();
   }catch(e){
 
   }

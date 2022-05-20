@@ -1,3 +1,4 @@
+import 'package:fire/Services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Singin extends StatefulWidget {
@@ -8,6 +9,9 @@ class Singin extends StatefulWidget {
 }
 
 class _SinginState extends State<Singin> {
+
+  final AuthService _auth= AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -27,19 +27,23 @@ Text("Sign In")
       ),
       body: Container(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            ElevatedButton(
-                onPressed: () async {
-                 dynamic result= await _auth.Signguest();
-                if(result== null){
-                  print("error");
-                }else
-                  {
-                    print("Success");
-                  }
+            Center(
+              child: ElevatedButton(
 
-                 },
-                child: Text("Sign IN as Guest"))
+                  onPressed: () async {
+                   dynamic result= await _auth.Signguest();
+                  if(result== null){
+                    print("error");
+                  }else
+                    {
+                      print("Success");
+                    }
+
+                   },
+                  child: Text("Sign IN as Guest")),
+            )
 
           ],
         ),

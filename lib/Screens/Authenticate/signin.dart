@@ -30,7 +30,7 @@ Text("Sign In")
           children: <Widget>[
             ElevatedButton(
                 onPressed: () async {
-                  await _auth.Signguest()
+                  await _auth.Signguest();
                 },
                 child: Text("Sign IN as Guest"))
 

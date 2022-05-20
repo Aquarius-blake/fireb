@@ -30,8 +30,15 @@ Text("Sign In")
           children: <Widget>[
             ElevatedButton(
                 onPressed: () async {
-                  await _auth.Signguest();
-                },
+                 dynamic result= await _auth.Signguest();
+                if(result== null){
+                  print("error");
+                }else
+                  {
+                    print("Success")
+                  }
+
+                 },
                 child: Text("Sign IN as Guest"))
 
           ],

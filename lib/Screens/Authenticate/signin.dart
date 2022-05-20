@@ -13,7 +13,7 @@ class _SinginState extends State<Singin> {
     return Scaffold(
  backgroundColor: Colors.lightBlueAccent ,
       appBar: AppBar(
-
+backgroundColor: Colors.lightBlue,
       ),
     );
   }

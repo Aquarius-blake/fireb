@@ -35,7 +35,7 @@ Text("Sign In")
                   onPressed: () async {
                    dynamic result= await _auth.Signguest();
                   if(result== null){
-                    print("error");
+                    print("Error");
                   }else
                     {
                       print("Success");

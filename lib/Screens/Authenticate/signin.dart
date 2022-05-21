@@ -31,7 +31,7 @@ Text("Sign In")
             children: <Widget>[
               Icon(
                   Icons.forum,
-                color: Colors.white,
+                color: Colors.white70,
                 size: 180,
               ),
               Column(

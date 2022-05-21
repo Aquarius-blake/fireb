@@ -40,8 +40,11 @@ Padding(
               ),
               TextField(
                 decoration: InputDecoration(
-                    hintText: "Enter Email Address"
+                    hintText: "Enter Email Address",
+                  filled: true,
+                  fillColor: Colors.white70,
                 ),
+
                 style: TextStyle(
 
                 ),

@@ -40,7 +40,7 @@ Padding(
               ),
               TextField(),
               TextField(),
-              SizedBox(height: 30,),
+              SizedBox(height: 50,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
 

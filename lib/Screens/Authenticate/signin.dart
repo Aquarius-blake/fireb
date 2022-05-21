@@ -56,10 +56,13 @@ Padding(
 
                         },
 
-                        child: Text(
-                          "Sign in ",
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(100.0,0.0,100.0,0),
+                          child: Text(
+                            "Sign in ",
 
 
+                          ),
                         )
                     ),
                   ),

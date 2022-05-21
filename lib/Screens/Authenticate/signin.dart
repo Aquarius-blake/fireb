@@ -38,9 +38,16 @@ Padding(
                 color: Colors.white70,
                 size: 180,
               ),
-              TextField(),
+              TextField(
+
+                style: TextStyle(
+
+                ),
+              ),
               SizedBox(height: 20,),
-              TextField(),
+              TextField(
+
+              ),
               SizedBox(height: 50,),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,

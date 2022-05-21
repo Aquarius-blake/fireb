@@ -40,7 +40,7 @@ Padding(
               ),
               TextField(
                 decoration: InputDecoration(
-                    hintText: "Email Address"
+                    hintText: "Enter Email Address"
                 ),
                 style: TextStyle(
 
@@ -49,7 +49,7 @@ Padding(
               SizedBox(height: 20,),
               TextField(
                 decoration: InputDecoration(
-                  hintText: "Password"
+                  hintText: "Enter Password"
                 ),
                   style: TextStyle(
 

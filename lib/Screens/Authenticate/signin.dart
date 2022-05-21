@@ -29,7 +29,7 @@ Padding(
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(14.0),
+        padding: const EdgeInsets.all(18.0),
         child: Container(
           child: SingleChildScrollView(
             child: Column(

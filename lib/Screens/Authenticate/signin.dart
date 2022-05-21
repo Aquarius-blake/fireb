@@ -51,7 +51,7 @@ Padding(
 
                   ),
                 ),
-                SizedBox(height: 200,),
+                SizedBox(height: 20,),
                 TextField(
                   obscureText: true,
                   decoration: InputDecoration(

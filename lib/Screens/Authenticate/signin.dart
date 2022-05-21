@@ -57,7 +57,7 @@ Padding(
                         },
 
                         child: Text(
-                          "Sign in as Guest",
+                          "Sign in ",
 
 
                         )

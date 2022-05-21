@@ -39,6 +39,7 @@ Padding(
                 size: 180,
               ),
               TextField(),
+              SizedBox(height: 20,),
               TextField(),
               SizedBox(height: 50,),
               Column(

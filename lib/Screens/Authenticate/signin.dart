@@ -30,7 +30,7 @@ Text("Sign In")
           child: Column(
             children: <Widget>[
               Icon(
-                  Icons.book_outlined,
+                  Icons.book,
                 size: 180,
               ),
               Column(

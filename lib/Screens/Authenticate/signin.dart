@@ -46,7 +46,9 @@ Padding(
               ),
               SizedBox(height: 20,),
               TextField(
+                  style: TextStyle(
 
+                  ),
               ),
               SizedBox(height: 50,),
               Column(

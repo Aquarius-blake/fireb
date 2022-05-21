@@ -39,6 +39,7 @@ Padding(
                 size: 180,
               ),
               TextField(),
+              TextField(),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
 

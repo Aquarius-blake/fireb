@@ -39,7 +39,9 @@ Padding(
                 size: 180,
               ),
               TextField(
-
+                decoration: InputDecoration(
+                    hintText: "Password"
+                ),
                 style: TextStyle(
 
                 ),

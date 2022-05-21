@@ -15,7 +15,7 @@ class _SinginState extends State<Singin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
- backgroundColor: Colors.lightBlueAccent ,
+ backgroundColor: Colors.lightBlueAccent[100] ,
       appBar: AppBar(
 backgroundColor: Colors.lightBlue,
         elevation: 2.0,
@@ -78,6 +78,7 @@ Padding(
                             }else
                             {
                               print("Success");
+                              print("$result");
                             }
 
                           },

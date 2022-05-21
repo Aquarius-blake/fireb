@@ -78,7 +78,7 @@ Padding(
                         },
 
                         child: Padding(
-                          padding: const EdgeInsets.fromLTRB(80.0,0,80.0,0),
+                          padding: const EdgeInsets.fromLTRB(75.0,0,75.0,0),
                           child: Text(
                             "Sign in as Guest",
 

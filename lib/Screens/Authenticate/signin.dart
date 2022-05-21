@@ -46,6 +46,9 @@ Padding(
               ),
               SizedBox(height: 20,),
               TextField(
+                decoration: InputDecoration(
+                  hintText: "Password"
+                ),
                   style: TextStyle(
 
                   ),

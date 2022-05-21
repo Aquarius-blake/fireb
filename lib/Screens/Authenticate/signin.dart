@@ -31,7 +31,7 @@ Text("Sign In")
             children: <Widget>[
               Icon(
                   Icons.wifi,
-                size: 18,
+                size: 40,
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,

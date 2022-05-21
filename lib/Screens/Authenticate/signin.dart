@@ -30,7 +30,7 @@ Text("Sign In")
           child: Column(
             children: <Widget>[
               Icon(
-                  Icons.forum_outlined,
+                  Icons.forum,
                 color: Colors.white70,
                 size: 180,
               ),

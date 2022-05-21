@@ -48,6 +48,30 @@ Padding(
                       child: ElevatedButton(
 
                           onPressed: () async {
+                            dynamic result= await _auth.Signguest();
+                            if(result== null){
+                              print("Error");
+                            }else
+                            {
+                              print("Success");
+                            }
+
+                          },
+
+                          child: Text(
+                            "Sign in as Guest",
+
+
+                          )
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: ElevatedButton(
+
+                          onPressed: () async {
                            dynamic result= await _auth.Signguest();
                           if(result== null){
                             print("Error");

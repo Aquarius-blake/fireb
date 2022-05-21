@@ -48,8 +48,11 @@ Padding(
               ),
               SizedBox(height: 20,),
               TextField(
+                obscureText: true,
                 decoration: InputDecoration(
-                  hintText: "Enter Password"
+                  hintText: "Enter Password",
+                  filled: true,
+                  fillColor: Colors.white70,
                 ),
                   style: TextStyle(
 

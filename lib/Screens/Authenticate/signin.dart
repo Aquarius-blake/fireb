@@ -29,6 +29,7 @@ Text("Sign In")
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
+              SizedBox(height:10 ,),
               Icon(
                   Icons.forum,
                 color: Colors.white70,

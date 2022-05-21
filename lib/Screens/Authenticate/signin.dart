@@ -22,7 +22,7 @@ backgroundColor: Colors.lightBlue,
         title: Row(
           children:<Widget> [
 Padding(
-  padding: const EdgeInsets.fromLTRB(200.0,0,0,0),
+  padding: const EdgeInsets.fromLTRB(150.0,0,0,0),
   child:   Text("Sign In"),
 )
           ],

@@ -40,7 +40,7 @@ Padding(
               ),
               TextField(
                 decoration: InputDecoration(
-                    hintText: "Password"
+                    hintText: "Email Address"
                 ),
                 style: TextStyle(
 

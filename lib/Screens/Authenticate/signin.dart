@@ -99,7 +99,7 @@ Padding(
                          },
 
                         child: Padding(
-                          padding: const EdgeInsets.all(20.0),
+                          padding: const EdgeInsets.fromLTRB(20.0,0,20.0,0),
                           child: Text(
                               "Register",
 

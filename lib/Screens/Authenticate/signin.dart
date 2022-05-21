@@ -26,40 +26,46 @@ Text("Sign In")
         ),
       ),
       body: Container(
-        child: Column(
-          children: <Widget>[
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              Icon(
+                  Icons.wifi,
+                size: 18,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
 
-              children: <Widget>[
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: ElevatedButton(
+                children: <Widget>[
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: ElevatedButton(
 
-                        onPressed: () async {
-                         dynamic result= await _auth.Signguest();
-                        if(result== null){
-                          print("Error");
-                        }else
-                          {
-                            print("Success");
-                          }
+                          onPressed: () async {
+                           dynamic result= await _auth.Signguest();
+                          if(result== null){
+                            print("Error");
+                          }else
+                            {
+                              print("Success");
+                            }
 
-                         },
+                           },
 
-                        child: Text(
-                            "Sign IN as Guest",
+                          child: Text(
+                              "Sign IN as Guest",
 
 
-                        )
+                          )
+                      ),
                     ),
-                  ),
-                )
+                  )
 
-              ],
-            ),
-          ],
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

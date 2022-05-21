@@ -99,7 +99,7 @@ Padding(
                          },
 
                         child: Text(
-                            "Sign in as Guest",
+                            "Register",
 
 
                         )

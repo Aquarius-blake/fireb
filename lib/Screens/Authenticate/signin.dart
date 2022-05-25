@@ -103,7 +103,7 @@ Padding(
                             }else
                             {
                               print("Success");
-                              print(result);
+                              print(result.uid);
                             }
 
                           },

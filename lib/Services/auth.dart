@@ -5,9 +5,13 @@ class AuthService{
 
   final FirebaseAuth _auth=FirebaseAuth.instance;
 //user object
- /* User1 _userfirebase(UserCredential user){
-    return user!=null ? User1(UID: uid): null;
-  }*/
+ User1? _userfirebase(User? user){
+    if (user!=null) {
+      return User1(UID: user.uid);
+    } else {
+      return null;
+    }
+  }
 
   //sign in as guest
 

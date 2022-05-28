@@ -23,6 +23,7 @@ Text(
 
       ),
       drawer: Drawer(
+        backgroundColor: Colors.white70,
         child: Container(
           child: Column(
             children: <Widget>[

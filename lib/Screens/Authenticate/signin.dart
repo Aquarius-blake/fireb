@@ -70,7 +70,9 @@ class _SinginState extends State<Singin> {
                   children: <Widget>[
                     Center(
                       child: ElevatedButton(
+style: ButtonStyle(
 
+),
                           onPressed: () async {
                             dynamic result= await _auth.Signguest();
                             if(result== null){

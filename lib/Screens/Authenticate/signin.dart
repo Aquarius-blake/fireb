@@ -99,7 +99,7 @@ Padding(
                           onPressed: () async {
                             dynamic result= await _auth.Signguest();
                             if(result== null){
-                              print("Error Signing in");
+                              print("Error Signing into App");
                             }else
                             {
                               print("Success");

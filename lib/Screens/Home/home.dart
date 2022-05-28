@@ -12,12 +12,12 @@ class Home extends StatelessWidget {
         elevation: 2.0,
         title: Row(
           children: <Widget>[
-Text(
-  "Homepage",
-  style: TextStyle(
+            Text(
+              "Homepage",
+              style: TextStyle(
 
-  ),
-)
+              ),
+            )
           ],
         ),
 
@@ -27,14 +27,14 @@ Text(
         child: Container(
           child: Column(
             children: <Widget>[
-DrawerHeader(
-    child: Column(
-      children: <Widget>[
-CircleAvatar(
+              DrawerHeader(
+                  child: Column(
+                    children: <Widget>[
+                      CircleAvatar(
 
-)
-      ],
-    ))
+                      )
+                    ],
+                  ))
             ],
           ),
         ),

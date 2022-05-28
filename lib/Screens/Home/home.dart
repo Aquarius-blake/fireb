@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       CircleAvatar(
 
-                      )
+                      ),
                     ],
                   ))
             ],

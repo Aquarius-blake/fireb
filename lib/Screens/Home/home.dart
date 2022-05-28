@@ -10,6 +10,9 @@ class Home extends StatelessWidget {
 appBar: AppBar(
 
 ),
+      drawer: Drawer(
+
+      ),
     );
   }
 }

@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
         title: Row(
           children: <Widget>[
 Text(
-  "",
+  "Homepage",
   style: TextStyle(
 
   ),
@@ -23,6 +23,13 @@ Text(
 
       ),
       drawer: Drawer(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+
+            ],
+          ),
+        ),
 
       ),
     );

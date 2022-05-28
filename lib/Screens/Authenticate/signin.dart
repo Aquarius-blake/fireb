@@ -15,16 +15,16 @@ class _SinginState extends State<Singin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
- backgroundColor: Colors.lightBlueAccent[100] ,
+      backgroundColor: Colors.lightBlueAccent[100] ,
       appBar: AppBar(
-backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.lightBlue,
         elevation: 2.0,
         title: Row(
           children:<Widget> [
-Padding(
-  padding: const EdgeInsets.fromLTRB(130.0,0,0,0),
-  child:   Text("Sign In"),
-)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(130.0,0,0,0),
+              child:   Text("Sign In"),
+            )
           ],
         ),
       ),
@@ -36,13 +36,13 @@ Padding(
               children: <Widget>[
                 SizedBox(height:30 ,),
                 Icon(
-                    Icons.forum,
+                  Icons.forum,
                   color: Colors.white70,
                   size: 180,
                 ),
                 TextField(
                   decoration: InputDecoration(
-                      hintText: "Enter Email Address",
+                    hintText: "Enter Email Address",
                     filled: true,
                     fillColor: Colors.white70,
                   ),
@@ -59,9 +59,9 @@ Padding(
                     filled: true,
                     fillColor: Colors.white70,
                   ),
-                    style: TextStyle(
+                  style: TextStyle(
 
-                    ),
+                  ),
                 ),
                 SizedBox(height: 50,),
                 Column(
@@ -95,9 +95,9 @@ Padding(
                     ),
                     Center(
                       child: ElevatedButton(
-style: ButtonStyle(
+                          style: ButtonStyle(
 
-),
+                          ),
                           onPressed: () async {
                             dynamic result= await _auth.Signguest();
                             if(result== null){
@@ -114,9 +114,9 @@ style: ButtonStyle(
                             padding: const EdgeInsets.fromLTRB(75.0,0,75.0,0),
                             child: Text(
                               "Sign in as Guest",
-                          style: TextStyle(
+                              style: TextStyle(
 
-                          ),
+                              ),
 
                             ),
                           )
@@ -126,20 +126,20 @@ style: ButtonStyle(
                       child: ElevatedButton(
 
                           onPressed: () async {
-                           dynamic result= await _auth.Signguest();
-                          if(result== null){
-                            print("Error");
-                          }else
+                            dynamic result= await _auth.Signguest();
+                            if(result== null){
+                              print("Error");
+                            }else
                             {
                               print("Success");
                             }
 
-                           },
+                          },
 
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(100.0,0,100.0,0),
                             child: Text(
-                                "Register",
+                              "Register",
 
 
 

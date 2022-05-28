@@ -126,9 +126,9 @@ class _SinginState extends State<Singin> {
                     ),
                     Center(
                       child: ElevatedButton(
-style: ButtonStyle(
+                          style: ButtonStyle(
 
-),
+                          ),
                           onPressed: () async {
                             dynamic result= await _auth.Signguest();
                             if(result== null){

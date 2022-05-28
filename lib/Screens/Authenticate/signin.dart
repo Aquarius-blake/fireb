@@ -132,7 +132,7 @@ class _SinginState extends State<Singin> {
                           onPressed: () async {
                             dynamic result= await _auth.Signguest();
                             if(result== null){
-                              print("Error");
+                              print("Error ");
                             }else
                             {
                               print("Success");

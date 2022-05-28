@@ -1,6 +1,6 @@
 # fire
 
-Firebase something
+Forum App using Firebase something
 
 ## Getting Started
 

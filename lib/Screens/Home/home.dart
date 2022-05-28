@@ -29,7 +29,9 @@ Text(
 DrawerHeader(
     child: Column(
       children: <Widget>[
+CircleAvatar(
 
+)
       ],
     ))
             ],

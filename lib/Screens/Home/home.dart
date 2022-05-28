@@ -26,7 +26,12 @@ Text(
         child: Container(
           child: Column(
             children: <Widget>[
+DrawerHeader(
+    child: Column(
+      children: <Widget>[
 
+      ],
+    ))
             ],
           ),
         ),

@@ -5,7 +5,7 @@ class AuthService{
 
   final FirebaseAuth _auth=FirebaseAuth.instance;
 //user object
- User1? _userfirebase(User? user){
+  User1? _userfirebase(User? user){
     if (user!=null) {
       return User1(UID: user.uid);
     } else {
@@ -15,26 +15,26 @@ class AuthService{
 
   //auth change user stream
   Stream<User1?> get user {
-   return _auth.authStateChanges()
-       .map((User? user) => _userfirebase(user));
+    return _auth.authStateChanges()
+        .map((User? user) => _userfirebase(user));
 
   }
 
   //sign in as guest
 
-Future Signguest() async{
+  Future Signguest() async{
 
-  try{
-     UserCredential result= await _auth.signInAnonymously();
-        User? user = result.user;
-        return _userfirebase(user);
-  }catch(e){
-print(e.toString());
+    try{
+      UserCredential result= await _auth.signInAnonymously();
+      User? user = result.user;
+      return _userfirebase(user);
+    }catch(e){
+      print(e.toString());
 
-return null;
+      return null;
+    }
+
   }
-
-}
 
 
 
@@ -42,8 +42,14 @@ return null;
 
 
   //sign out
-Future SignOut()async{
+  Future SignOut()async{
+    try{
 
-}
+    }catch(e){
+
+    }
+
+
+  }
 
 }

@@ -15,7 +15,8 @@ class AuthService{
 
   //auth change user stream
   Stream<User1?> get user {
-   return _auth.authStateChanges().map((User? user) => _userfirebase(user));
+   return _auth.authStateChanges()
+       .map((User? user) => _userfirebase(user));
 
   }
 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Services/auth.dart';
+
 class Register extends StatefulWidget {
    Register({Key? key}) : super(key: key);
 
@@ -10,6 +12,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   String email="";
   String password="";
+  final AuthService _auth= AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -104,7 +107,14 @@ class _RegisterState extends State<Register> {
 
                             ),
                             onPressed: () async {
-
+                              dynamic result= await _auth.Signguest();
+                              if(result== null){
+                                print("Error Signing into App");
+                              }else
+                              {
+                                print("Success");
+                                print(result.UID);
+                              }
 
                             },
 
@@ -126,7 +136,13 @@ class _RegisterState extends State<Register> {
 
                             ),
                             onPressed: () async {
-
+                              dynamic result= await _auth.Signguest();
+                              if(result== null){
+                                print("Error ");
+                              }else
+                              {
+                                print("Success");
+                              }
 
                             },
 

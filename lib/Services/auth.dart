@@ -44,7 +44,7 @@ class AuthService{
   //sign out
   Future SignOut()async{
     try{
-
+return await _auth.signOut();
     }catch(e){
 
     }

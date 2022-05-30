@@ -47,7 +47,9 @@ class _SinginState extends State<Singin> {
                   ),
                   TextFormField(
                     onChanged: (val){
-
+                      setState(() {
+                        email=val;
+                      });
                     },
                     decoration: InputDecoration(
                       hintText: "Enter Email Address",
@@ -62,7 +64,9 @@ class _SinginState extends State<Singin> {
                   SizedBox(height: 20,),
                   TextFormField(
                     onChanged: (val){
-
+                      setState(() {
+                        password=val;
+                      });
                     },
                     obscureText: true,
                     decoration: InputDecoration(

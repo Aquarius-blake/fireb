@@ -13,6 +13,11 @@ class AuthService{
     }
   }
 
+  //auth change user stream
+  Stream<User?> get user {
+   return _auth.authStateChanges();
+  }
+
   //sign in as guest
 
 Future Signguest() async{

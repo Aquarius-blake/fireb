@@ -1,3 +1,4 @@
+import 'package:fire/Screens/Authenticate/Register.dart';
 import 'package:fire/Screens/Wrapper.dart';
 import 'package:fire/Services/auth.dart';
 import 'package:flutter/material.dart';
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       initialData: null,
       child: MaterialApp(
         home: Wrapper(),
+        routes: {
+          '/register':(context)=>Register(),
+        },
          ),
     );
   }

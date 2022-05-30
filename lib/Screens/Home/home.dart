@@ -5,7 +5,7 @@ import 'package:line_icons/line_icons.dart';
 
 class Home extends StatelessWidget {
 
-final  AuthService _auth=AuthService();
+  final  AuthService _auth=AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +50,7 @@ final  AuthService _auth=AuthService();
 
                         ),
                         onTap: () async{
-await _auth.SignOut();
+                          await _auth.SignOut();
                         },
                       ),
                     ],

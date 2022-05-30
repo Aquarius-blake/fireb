@@ -32,129 +32,131 @@ class _SinginState extends State<Singin> {
         padding: const EdgeInsets.all(18.0),
         child: Container(
           child: SingleChildScrollView(
-            child: Column(
-              children: <Widget>[
-                SizedBox(height:30 ,),
-                Icon(
-                  Icons.forum,
-                  color: Colors.white70,
-                  size: 180,
-                ),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: "Enter Email Address",
-                    filled: true,
-                    fillColor: Colors.white70,
+            child: Form(
+              child: Column(
+                children: <Widget>[
+                  SizedBox(height:30 ,),
+                  Icon(
+                    Icons.forum,
+                    color: Colors.white70,
+                    size: 180,
                   ),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      hintText: "Enter Email Address",
+                      filled: true,
+                      fillColor: Colors.white70,
+                    ),
 
-                  style: TextStyle(
+                    style: TextStyle(
 
+                    ),
                   ),
-                ),
-                SizedBox(height: 20,),
-                TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    hintText: "Enter Password",
-                    filled: true,
-                    fillColor: Colors.white70,
+                  SizedBox(height: 20,),
+                  TextFormField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      hintText: "Enter Password",
+                      filled: true,
+                      fillColor: Colors.white70,
+                    ),
+                    style: TextStyle(
+
+                    ),
                   ),
-                  style: TextStyle(
+                  SizedBox(height: 50,),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
 
-                  ),
-                ),
-                SizedBox(height: 50,),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-
-                  children: <Widget>[
-                    Center(
-                      child: ElevatedButton(
-                          style: ButtonStyle(
-
-                          ),
-                          onPressed: () async {
-                            dynamic result= await _auth.Signguest();
-                            if(result== null){
-                              print("Error");
-                            }else
-                            {
-                              print("Success");
-                              print(result.UID);
-                            }
-
-                          },
-
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(100.0,0.0,100.0,0),
-                            child: Text(
-                              "Sign in ",
-
+                    children: <Widget>[
+                      Center(
+                        child: ElevatedButton(
+                            style: ButtonStyle(
 
                             ),
-                          )
-                      ),
-                    ),
-                    Center(
-                      child: ElevatedButton(
-                          style: ButtonStyle(
+                            onPressed: () async {
+                              dynamic result= await _auth.Signguest();
+                              if(result== null){
+                                print("Error");
+                              }else
+                              {
+                                print("Success");
+                                print(result.UID);
+                              }
 
-                          ),
-                          onPressed: () async {
-                            dynamic result= await _auth.Signguest();
-                            if(result== null){
-                              print("Error Signing into App");
-                            }else
-                            {
-                              print("Success");
-                              print(result.UID);
-                            }
+                            },
 
-                          },
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(100.0,0.0,100.0,0),
+                              child: Text(
+                                "Sign in ",
 
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(75.0,0,75.0,0),
-                            child: Text(
-                              "Sign in as Guest",
-                              style: TextStyle(
 
                               ),
+                            )
+                        ),
+                      ),
+                      Center(
+                        child: ElevatedButton(
+                            style: ButtonStyle(
 
                             ),
-                          )
+                            onPressed: () async {
+                              dynamic result= await _auth.Signguest();
+                              if(result== null){
+                                print("Error Signing into App");
+                              }else
+                              {
+                                print("Success");
+                                print(result.UID);
+                              }
+
+                            },
+
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(75.0,0,75.0,0),
+                              child: Text(
+                                "Sign in as Guest",
+                                style: TextStyle(
+
+                                ),
+
+                              ),
+                            )
+                        ),
                       ),
-                    ),
-                    Center(
-                      child: ElevatedButton(
-                          style: ButtonStyle(
-
-                          ),
-                          onPressed: () async {
-                            dynamic result= await _auth.Signguest();
-                            if(result== null){
-                              print("Error ");
-                            }else
-                            {
-                              print("Success");
-                            }
-
-                          },
-
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(100.0,0,100.0,0),
-                            child: Text(
-                              "Register",
-
-
+                      Center(
+                        child: ElevatedButton(
+                            style: ButtonStyle(
 
                             ),
-                          )
-                      ),
-                    )
+                            onPressed: () async {
+                              dynamic result= await _auth.Signguest();
+                              if(result== null){
+                                print("Error ");
+                              }else
+                              {
+                                print("Success");
+                              }
 
-                  ],
-                ),
-              ],
+                            },
+
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(100.0,0,100.0,0),
+                              child: Text(
+                                "Register",
+
+
+
+                              ),
+                            )
+                        ),
+                      )
+
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),

@@ -41,6 +41,9 @@ return null;
   //sign in with email
 
 
-  //signout
+  //sign out
+Future SignOut()async{
+
+}
 
 }

@@ -36,10 +36,10 @@ class Home extends StatelessWidget {
                       ),
                       SizedBox(height: 10,),
                       ListTile(
-                        leading: Icon(LineIcons.running,
+                        leading: Icon(LineIcons.alternateSignOut,
                           color: Colors.black, size:50.0,),
                         title: Text(
-                          "Profile",
+                          "Sign Out",
                           style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.bold,

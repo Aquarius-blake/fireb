@@ -12,6 +12,10 @@ class _SinginState extends State<Singin> {
 
   final AuthService _auth= AuthService();
 
+  //Text field States
+  String email="";
+  String password="";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

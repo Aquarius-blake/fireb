@@ -1,10 +1,11 @@
+import 'package:fire/Services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
 
+final  AuthService _auth=AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,8 +49,8 @@ class Home extends StatelessWidget {
                           ),
 
                         ),
-                        onTap: (){
-
+                        onTap: () async{
+await _auth.SignOut();
                         },
                       ),
                     ],

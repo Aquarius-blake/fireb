@@ -42,6 +42,9 @@ class _SinginState extends State<Singin> {
                     size: 180,
                   ),
                   TextFormField(
+                    onChanged: (val){
+
+                    },
                     decoration: InputDecoration(
                       hintText: "Enter Email Address",
                       filled: true,

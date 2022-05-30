@@ -14,8 +14,9 @@ class AuthService{
   }
 
   //auth change user stream
-  Stream<User?> get user {
-   return _auth.authStateChanges();
+  Stream<User1?> get user {
+   return _auth.authStateChanges().map((User? user) => _userfirebase(user));
+
   }
 
   //sign in as guest

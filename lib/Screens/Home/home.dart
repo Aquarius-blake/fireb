@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 
 class Home extends StatelessWidget {
@@ -32,6 +33,24 @@ class Home extends StatelessWidget {
                     children: <Widget>[
                       CircleAvatar(
 
+                      ),
+                      SizedBox(height: 10,),
+                      ListTile(
+                        leading: Icon(LineIcons.running,
+                          color: Colors.black, size:50.0,),
+                        title: Text(
+                          "Profile",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+
+                          ),
+
+                        ),
+                        onTap: (){
+
+                        },
                       ),
                     ],
                   ))

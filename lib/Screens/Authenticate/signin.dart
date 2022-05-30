@@ -54,6 +54,9 @@ class _SinginState extends State<Singin> {
                   ),
                   SizedBox(height: 20,),
                   TextFormField(
+                    onChanged: (val){
+
+                    },
                     obscureText: true,
                     decoration: InputDecoration(
                       hintText: "Enter Password",

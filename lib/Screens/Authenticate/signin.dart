@@ -12,8 +12,6 @@ class _SinginState extends State<Singin> {
 
   final AuthService _auth= AuthService();
 
-
-
   //Text field States
   String email="";
   String password="";
@@ -141,6 +139,7 @@ class _SinginState extends State<Singin> {
 
                             ),
                             onPressed: () async {
+                             Navigator.pushNamed(context, '/register');
 
                             },
 

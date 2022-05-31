@@ -52,7 +52,7 @@ class _RegisterState extends State<Register> {
                       });
                     },
                     decoration: InputDecoration(
-                      hintText: "Enter Username",
+                      hintText: "Enter Full Name",
                       filled: true,
                       fillColor: Colors.white70,
                     ),

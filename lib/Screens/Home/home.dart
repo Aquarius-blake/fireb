@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
                     child: Column(
                       children: <Widget>[
                         CircleAvatar(
-radius: 40.0,
+radius: 60.0,
                         ),
 
                       ],

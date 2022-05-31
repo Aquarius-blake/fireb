@@ -39,12 +39,13 @@ class _RegisterState extends State<Register> {
             child: Form(
               child: Column(
                 children: <Widget>[
-                  SizedBox(height:25 ,),
+                  SizedBox(height:20.0 ,),
                   Icon(
                     Icons.forum,
                     color: Colors.white70,
                     size: 100,
                   ),
+
                   TextFormField(
                     onChanged: (val){
                       setState(() {

@@ -47,11 +47,11 @@ class _RegisterState extends State<Register> {
                   TextFormField(
                     onChanged: (val){
                       setState(() {
-                        email=val;
+                        Username=val;
                       });
                     },
                     decoration: InputDecoration(
-                      hintText: "Enter Email Address",
+                      hintText: "Enter Username",
                       filled: true,
                       fillColor: Colors.white70,
                     ),

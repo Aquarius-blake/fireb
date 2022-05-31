@@ -12,6 +12,8 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   String email="";
   String password="";
+  String Username="";
+
   final AuthService _auth= AuthService();
   @override
   Widget build(BuildContext context) {

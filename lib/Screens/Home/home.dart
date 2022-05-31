@@ -43,6 +43,24 @@ class _HomeState extends State<Home> {
                       ),
                       SizedBox(height: 10,),
                       ListTile(
+                        leading: Icon(LineIcons.personEnteringBooth,
+                          color: Colors.black, size:50.0,),
+                        title: Text(
+                          "Profile",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic,
+
+                          ),
+
+                        ),
+                        onTap: () async{
+
+                        },
+                      ),
+                      SizedBox(height: 10,),
+                      ListTile(
                         leading: Icon(LineIcons.alternateSignOut,
                           color: Colors.black, size:50.0,),
                         title: Text(

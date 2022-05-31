@@ -13,6 +13,7 @@ class _RegisterState extends State<Register> {
   String email="";
   String password="";
   String Username="";
+  String FName="";
 
   final AuthService _auth= AuthService();
   @override
@@ -43,6 +44,22 @@ class _RegisterState extends State<Register> {
                     Icons.forum,
                     color: Colors.white70,
                     size: 100,
+                  ),
+                  TextFormField(
+                    onChanged: (val){
+                      setState(() {
+                        Username=val;
+                      });
+                    },
+                    decoration: InputDecoration(
+                      hintText: "Enter Username",
+                      filled: true,
+                      fillColor: Colors.white70,
+                    ),
+
+                    style: TextStyle(
+
+                    ),
                   ),
                   TextFormField(
                     onChanged: (val){

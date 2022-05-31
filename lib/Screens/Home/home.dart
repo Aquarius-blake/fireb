@@ -3,9 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
 
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   final  AuthService _auth=AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

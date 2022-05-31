@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 
 class Singin extends StatefulWidget {
 
-  final Function? toggleView;
-  Singin({required this.toggleView});
 
   @override
   State<Singin> createState() => _SinginState();
@@ -143,7 +141,6 @@ class _SinginState extends State<Singin> {
 
                             ),
                             onPressed: () async {
-                             Navigator.pushNamed(context, '/register');
 
                             },
 

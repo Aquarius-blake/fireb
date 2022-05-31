@@ -3,21 +3,16 @@ import 'package:flutter/material.dart';
 import '../../Services/auth.dart';
 
 class Register extends StatefulWidget {
-
-final Function? toggleView;
-Register({required this.toggleView});
+   Register({Key? key}) : super(key: key);
 
   @override
   State<Register> createState() => _RegisterState();
 }
 
 class _RegisterState extends State<Register> {
-
-
   String email="";
   String password="";
   String Username="";
-  String FName="";
 
   final AuthService _auth= AuthService();
   @override
@@ -30,19 +25,11 @@ class _RegisterState extends State<Register> {
         title: Row(
           children:<Widget> [
             Padding(
-              padding: const EdgeInsets.fromLTRB(50.0,0,0,0),
+              padding: const EdgeInsets.fromLTRB(130.0,0,0,0),
               child:   Text("Sign Up"),
             )
           ],
         ),
-        actions: <Widget>[
-ElevatedButton(
-
-    onPressed: (){},
-    child: Text("Sign in"
-        "")
-)
-        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
@@ -51,47 +38,12 @@ ElevatedButton(
             child: Form(
               child: Column(
                 children: <Widget>[
-                  SizedBox(height:20.0 ,),
+                  SizedBox(height:30 ,),
                   Icon(
                     Icons.forum,
                     color: Colors.white70,
-                    size: 100,
+                    size: 180,
                   ),
-SizedBox(height: 10.0,),
-                  TextFormField(
-                    onChanged: (val){
-                      setState(() {
-                        Username=val;
-                      });
-                    },
-                    decoration: InputDecoration(
-                      hintText: "Enter Full Name",
-                      filled: true,
-                      fillColor: Colors.white70,
-                    ),
-
-                    style: TextStyle(
-
-                    ),
-                  ),
-                  SizedBox(height: 20.0,),
-                  TextFormField(
-                    onChanged: (val){
-                      setState(() {
-                        Username=val;
-                      });
-                    },
-                    decoration: InputDecoration(
-                      hintText: "Enter Username",
-                      filled: true,
-                      fillColor: Colors.white70,
-                    ),
-
-                    style: TextStyle(
-
-                    ),
-                  ),
-                  SizedBox(height: 20.0,),
                   TextFormField(
                     onChanged: (val){
                       setState(() {
@@ -130,7 +82,27 @@ SizedBox(height: 10.0,),
                     crossAxisAlignment: CrossAxisAlignment.stretch,
 
                     children: <Widget>[
+                      Center(
+                        child: ElevatedButton(
+                            style: ButtonStyle(
 
+                            ),
+                            onPressed: () async {
+                              print(email);
+                              print(password);
+
+                            },
+
+                            child: Padding(
+                              padding: const EdgeInsets.fromLTRB(100.0,0.0,100.0,0),
+                              child: Text(
+                                "Sign in ",
+
+
+                              ),
+                            )
+                        ),
+                      ),
                       Center(
                         child: ElevatedButton(
                             style: ButtonStyle(
@@ -166,7 +138,13 @@ SizedBox(height: 10.0,),
 
                             ),
                             onPressed: () async {
-
+                              dynamic result= await _auth.Signguest();
+                              if(result== null){
+                                print("Error ");
+                              }else
+                              {
+                                print("Success");
+                              }
 
                             },
 

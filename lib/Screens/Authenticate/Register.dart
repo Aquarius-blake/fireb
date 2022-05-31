@@ -4,8 +4,8 @@ import '../../Services/auth.dart';
 
 class Register extends StatefulWidget {
 
-final Function toggleView;
-Register({required this.toggleView}){}
+final void toggleView;
+Register({required this.toggleView});
 
   @override
   State<Register> createState() => _RegisterState();

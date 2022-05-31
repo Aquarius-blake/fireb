@@ -39,7 +39,7 @@ class _RegisterState extends State<Register> {
             child: Form(
               child: Column(
                 children: <Widget>[
-                  SizedBox(height:30 ,),
+                  SizedBox(height:25 ,),
                   Icon(
                     Icons.forum,
                     color: Colors.white70,

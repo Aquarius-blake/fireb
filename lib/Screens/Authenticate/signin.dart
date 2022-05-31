@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class Singin extends StatefulWidget {
 
-  final void toggleView;
+  final Function? toggleView;
   Singin({required this.toggleView});
 
   @override
@@ -13,6 +13,8 @@ class Singin extends StatefulWidget {
 class _SinginState extends State<Singin> {
 
   final AuthService _auth= AuthService();
+
+
 
   //Text field States
   String email="";

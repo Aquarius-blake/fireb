@@ -4,7 +4,7 @@ import '../../Services/auth.dart';
 
 class Register extends StatefulWidget {
 
-final void toggleView;
+final Function? toggleView;
 Register({required this.toggleView});
 
   @override
@@ -12,6 +12,8 @@ Register({required this.toggleView});
 }
 
 class _RegisterState extends State<Register> {
+
+
   String email="";
   String password="";
   String Username="";
@@ -33,6 +35,14 @@ class _RegisterState extends State<Register> {
             )
           ],
         ),
+        actions: <Widget>[
+ElevatedButton(
+
+    onPressed: (){},
+    child: Text("Sign in"
+        "")
+)
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),

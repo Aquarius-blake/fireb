@@ -13,7 +13,7 @@ class _AuthenticateState extends State<Authenticate> {
 
   bool showSignin=true;
 
-  void toggleView(){
+  Function? toggleView(){
     setState(() {
       showSignin=!showSignin;
     });

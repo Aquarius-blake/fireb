@@ -2,7 +2,9 @@ import 'package:fire/Services/auth.dart';
 import 'package:flutter/material.dart';
 
 class Singin extends StatefulWidget {
-  const Singin({Key? key}) : super(key: key);
+
+  final Function toggleView;
+  Singin({required this.toggleView}){}
 
   @override
   State<Singin> createState() => _SinginState();

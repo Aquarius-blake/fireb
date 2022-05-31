@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../../Services/auth.dart';
 
 class Register extends StatefulWidget {
-   Register({Key? key}) : super(key: key);
+
+final Function toggleView;
+Register({required this.toggleView}){}
 
   @override
   State<Register> createState() => _RegisterState();

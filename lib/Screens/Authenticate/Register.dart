@@ -154,13 +154,7 @@ SizedBox(height: 10.0,),
 
                             ),
                             onPressed: () async {
-                              dynamic result= await _auth.Signguest();
-                              if(result== null){
-                                print("Error ");
-                              }else
-                              {
-                                print("Success");
-                              }
+
 
                             },
 

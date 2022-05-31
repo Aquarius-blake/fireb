@@ -42,7 +42,23 @@ class _RegisterState extends State<Register> {
                   Icon(
                     Icons.forum,
                     color: Colors.white70,
-                    size: 180,
+                    size: 100,
+                  ),
+                  TextFormField(
+                    onChanged: (val){
+                      setState(() {
+                        email=val;
+                      });
+                    },
+                    decoration: InputDecoration(
+                      hintText: "Enter Email Address",
+                      filled: true,
+                      fillColor: Colors.white70,
+                    ),
+
+                    style: TextStyle(
+
+                    ),
                   ),
                   TextFormField(
                     onChanged: (val){

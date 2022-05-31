@@ -45,7 +45,7 @@ class _RegisterState extends State<Register> {
                     color: Colors.white70,
                     size: 100,
                   ),
-
+SizedBox(height: 10.0,),
                   TextFormField(
                     onChanged: (val){
                       setState(() {

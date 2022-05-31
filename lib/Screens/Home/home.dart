@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
                       ),
                       SizedBox(height: 10,),
                       ListTile(
-                        leading: Icon(LineIcons.personEnteringBooth,
+                        leading: Icon(Icons.person,
                           color: Colors.black, size:50.0,),
                         title: Text(
                           "Profile",

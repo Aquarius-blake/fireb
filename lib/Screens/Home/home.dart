@@ -33,54 +33,56 @@ class _HomeState extends State<Home> {
       drawer: Drawer(
         backgroundColor: Colors.white70,
         child: Container(
-          child: Column(
-            children: <Widget>[
-              DrawerHeader(
-                  child: Column(
-                    children: <Widget>[
-                      CircleAvatar(
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                DrawerHeader(
+                    child: Column(
+                      children: <Widget>[
+                        CircleAvatar(
 
-                      ),
+                        ),
 
-                    ],
-                  )
-              ),
-              SizedBox(height: 10,),
-              ListTile(
-                leading: Icon(Icons.person,
-                  color: Colors.black, size:50.0,),
-                title: Text(
-                  "Profile",
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
+                      ],
+                    )
+                ),
+                SizedBox(height: 10,),
+                ListTile(
+                  leading: Icon(Icons.person,
+                    color: Colors.black, size:50.0,),
+                  title: Text(
+                    "Profile",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+
+                    ),
 
                   ),
+                  onTap: () async{
 
+                  },
                 ),
-                onTap: () async{
+                SizedBox(height: 40,),
+                ListTile(
+                  leading: Icon(LineIcons.alternateSignOut,
+                    color: Colors.black, size:50.0,),
+                  title: Text(
+                    "Sign Out",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
 
-                },
-              ),
-              SizedBox(height: 40,),
-              ListTile(
-                leading: Icon(LineIcons.alternateSignOut,
-                  color: Colors.black, size:50.0,),
-                title: Text(
-                  "Sign Out",
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
+                    ),
 
                   ),
-
-                ),
-                onTap: () async{
-                  await _auth.SignOut();
-                },
-              ), ],
+                  onTap: () async{
+                    await _auth.SignOut();
+                  },
+                ), ],
+            ),
           ),
         ),
 

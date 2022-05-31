@@ -118,27 +118,7 @@ SizedBox(height: 10.0,),
                     crossAxisAlignment: CrossAxisAlignment.stretch,
 
                     children: <Widget>[
-                      Center(
-                        child: ElevatedButton(
-                            style: ButtonStyle(
 
-                            ),
-                            onPressed: () async {
-                              print(email);
-                              print(password);
-
-                            },
-
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(100.0,0.0,100.0,0),
-                              child: Text(
-                                "Sign in ",
-
-
-                              ),
-                            )
-                        ),
-                      ),
                       Center(
                         child: ElevatedButton(
                             style: ButtonStyle(

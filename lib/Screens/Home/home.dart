@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
 
                         },
                       ),
-                      SizedBox(height: 10,),
+                      SizedBox(height: 20,),
                       ListTile(
                         leading: Icon(LineIcons.alternateSignOut,
                           color: Colors.black, size:50.0,),

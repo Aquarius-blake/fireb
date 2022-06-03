@@ -125,7 +125,7 @@ color: Colors.lightBlueAccent[100],
                         ),
                       ),
                       SizedBox(height: 20,),
-                      SizedBox(height: 20,),
+
                       TextFormField(
                         onChanged: (val){
                           setState(() {

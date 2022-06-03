@@ -13,6 +13,7 @@ class _RegisterState extends State<Register> {
   String email="";
   String password="";
   String Username="";
+  String Fnmae= "";
 
   final AuthService _auth= AuthService();
   @override

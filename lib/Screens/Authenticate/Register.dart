@@ -48,6 +48,23 @@ class _RegisterState extends State<Register> {
                   TextFormField(
                     onChanged: (val){
                       setState(() {
+                        Fnmae=val;
+                      });
+                    },
+                    decoration: InputDecoration(
+                      hintText: "Enter Full Name",
+                      filled: true,
+                      fillColor: Colors.white70,
+                    ),
+
+                    style: TextStyle(
+
+                    ),
+                  ),
+                  SizedBox(height: 20,),
+                  TextFormField(
+                    onChanged: (val){
+                      setState(() {
                         Username=val;
                       });
                     },

@@ -60,6 +60,7 @@ color: Colors.lightBlueAccent[100],
                       ),
                       SizedBox(height:10 ,),
                       TextFormField(
+                        validator: (val)=>val!.isEmpty ? "Enter Your Full Name" : null,
                         onChanged: (val){
                           setState(() {
                             Fnmae=val;
@@ -77,6 +78,7 @@ color: Colors.lightBlueAccent[100],
                       ),
                       SizedBox(height: 20,),
                       TextFormField(
+                        validator: (val)=>val!.isEmpty ? "Enter Username" : null,
                         onChanged: (val){
                           setState(() {
                             Username=val;

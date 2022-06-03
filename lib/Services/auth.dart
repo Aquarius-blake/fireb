@@ -41,6 +41,10 @@ class AuthService{
   //sign in with email
 
 
+  //Register as new User with email and password
+
+
+
   //sign out
   Future SignOut()async{
     try{

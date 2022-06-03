@@ -107,6 +107,7 @@ color: Colors.lightBlueAccent[100],
                         ),
                       ),
                       SizedBox(height: 20,),
+
                       TextFormField(
                         onChanged: (val){
                           setState(() {
@@ -119,6 +120,24 @@ color: Colors.lightBlueAccent[100],
                           filled: true,
                           fillColor: Colors.white70,
                         ),
+                        style: TextStyle(
+
+                        ),
+                      ),
+                      SizedBox(height: 20,),
+                      SizedBox(height: 20,),
+                      TextFormField(
+                        onChanged: (val){
+                          setState(() {
+                            email=val;
+                          });
+                        },
+                        decoration: InputDecoration(
+                          hintText: "Male or Female or Other",
+                          filled: true,
+                          fillColor: Colors.white70,
+                        ),
+
                         style: TextStyle(
 
                         ),

@@ -50,7 +50,7 @@ color: Colors.lightBlueAccent[100],
                     children: <Widget>[
                       SizedBox(height:20 ,),
                       Icon(
-                        LineIcons.line,
+                        LineIcons.peopleCarry,
                         color: Colors.white70,
                         size: 90,
                       ),

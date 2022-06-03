@@ -94,6 +94,7 @@ color: Colors.lightBlueAccent[100],
                       ),
                       SizedBox(height: 20,),
                       TextFormField(
+                        validator: (val)=>val!.isEmpty ? "Enter Email" : null,
                         onChanged: (val){
                           setState(() {
                             email=val;
@@ -112,6 +113,7 @@ color: Colors.lightBlueAccent[100],
                       SizedBox(height: 20,),
 
                       TextFormField(
+                        validator: (val)=>val!.length < 6 ? "Enter a Password longer than 6 characters" : null,
                         onChanged: (val){
                           setState(() {
                             password=val;
@@ -187,12 +189,9 @@ color: Colors.lightBlueAccent[100],
 
                                 ),
                                 onPressed: () async {
-                                  print(email);
-                                  print(password);
-                                  print(Fnmae);
-                                  print(Username);
-                                  print(Gender);
+                        if(_formKey.currentState?.validate()==null){
 
+                        }
                                 },
 
                                 child: Padding(

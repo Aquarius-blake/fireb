@@ -5,7 +5,7 @@ import 'package:line_icons/line_icons.dart';
 import '../../Services/auth.dart';
 
 class Register extends StatefulWidget {
-   Register({Key? key}) : super(key: key);
+  Register({Key? key}) : super(key: key);
 
   @override
   State<Register> createState() => _RegisterState();
@@ -17,6 +17,7 @@ class _RegisterState extends State<Register> {
   String Username="";
   String Fnmae= "";
   String Gender="";
+  String error="";
 
   final AuthService _auth= AuthService();
   final _formKey =GlobalKey<FormState>();
@@ -46,7 +47,7 @@ class _RegisterState extends State<Register> {
             padding: EdgeInsets.all(8.0),
             child: Container(
               padding: EdgeInsets.all(6.0),
-color: Colors.lightBlueAccent[100],
+              color: Colors.lightBlueAccent[100],
               child: SingleChildScrollView(
                 child: Form(
                   key: _formKey,
@@ -191,12 +192,14 @@ color: Colors.lightBlueAccent[100],
 
                                 ),
                                 onPressed: () async {
-                        if(_formKey.currentState?.validate()==null){
-                          dynamic result=await _auth.RegisterNewUserEmail(email, password);
-                      if (result==null){
-                        print("error");
-                      }
-                        }
+                                  if(_formKey.currentState?.validate()==null){
+                                    dynamic result=await _auth.RegisterNewUserEmail(email, password);
+                                    if (result==null){
+                                      setState(() {
+                                        error="Registeration Failed";
+                                      });
+                                    }
+                                  }
                                 },
 
                                 child: Padding(
@@ -208,6 +211,13 @@ color: Colors.lightBlueAccent[100],
 
                                   ),
                                 )
+                            ),
+                          ),
+                          Center(
+                            child: Text(error,
+                              style: TextStyle(
+
+                              ),
                             ),
                           )
 

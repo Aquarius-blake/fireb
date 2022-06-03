@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../Services/auth.dart';
@@ -35,6 +36,7 @@ class _RegisterState extends State<Register> {
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Container(
+          margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
           child: Container(
 color: Colors.lightBlueAccent[100],
             child: SingleChildScrollView(

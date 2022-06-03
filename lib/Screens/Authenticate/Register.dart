@@ -19,6 +19,7 @@ class _RegisterState extends State<Register> {
   String Gender="";
 
   final AuthService _auth= AuthService();
+  final _formKey =GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -179,6 +180,7 @@ color: Colors.lightBlueAccent[100],
                           ),
                           Center(
                             child: ElevatedButton(
+
                                 style: ButtonStyle(
 
                                 ),

@@ -190,7 +190,8 @@ color: Colors.lightBlueAccent[100],
                                 ),
                                 onPressed: () async {
                         if(_formKey.currentState?.validate()==null){
-
+                          print(email);
+                          print(password);
                         }
                                 },
 

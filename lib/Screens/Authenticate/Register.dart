@@ -129,7 +129,7 @@ color: Colors.lightBlueAccent[100],
                       TextFormField(
                         onChanged: (val){
                           setState(() {
-                            email=val;
+                            Gender=val;
                           });
                         },
                         decoration: InputDecoration(
@@ -153,8 +153,6 @@ color: Colors.lightBlueAccent[100],
 
                                 ),
                                 onPressed: () async {
-                                  print(email);
-                                  print(password);
 
                                 },
 
@@ -203,13 +201,11 @@ color: Colors.lightBlueAccent[100],
 
                                 ),
                                 onPressed: () async {
-                                  dynamic result= await _auth.Signguest();
-                                  if(result== null){
-                                    print("Error ");
-                                  }else
-                                  {
-                                    print("Success");
-                                  }
+                                  print(email);
+                                  print(password);
+                                  print(Fnmae);
+                                  print(Username);
+                                  print(Gender);
 
                                 },
 

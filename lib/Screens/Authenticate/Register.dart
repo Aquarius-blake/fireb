@@ -19,7 +19,7 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent[100] ,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.lightBlue,
         elevation: 2.0,
@@ -36,7 +36,7 @@ class _RegisterState extends State<Register> {
         padding: const EdgeInsets.all(18.0),
         child: Container(
           child: Container(
-            
+
             child: SingleChildScrollView(
               child: Form(
                 child: Column(

@@ -33,7 +33,7 @@ class _RegisterState extends State<Register> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(12.0),
         child: Container(
 
           child: Container(

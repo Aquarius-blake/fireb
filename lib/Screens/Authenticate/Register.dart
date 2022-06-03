@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 import '../../Services/auth.dart';
 
@@ -49,7 +50,7 @@ color: Colors.lightBlueAccent[100],
                     children: <Widget>[
                       SizedBox(height:20 ,),
                       Icon(
-                        Icons.forum,
+                        LineIcons.line,
                         color: Colors.white70,
                         size: 90,
                       ),

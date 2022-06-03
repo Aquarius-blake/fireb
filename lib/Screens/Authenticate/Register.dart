@@ -51,7 +51,7 @@ class _RegisterState extends State<Register> {
                       });
                     },
                     decoration: InputDecoration(
-                      hintText: "Enter Email Address",
+                      hintText: "Enter Username",
                       filled: true,
                       fillColor: Colors.white70,
                     ),

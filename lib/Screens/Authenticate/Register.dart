@@ -38,7 +38,7 @@ class _RegisterState extends State<Register> {
 
           child: Container(
             color: Colors.white,
-            margin: EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Container(
 color: Colors.lightBlueAccent[100],
               child: SingleChildScrollView(

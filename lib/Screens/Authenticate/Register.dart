@@ -133,7 +133,7 @@ color: Colors.lightBlueAccent[100],
                           });
                         },
                         decoration: InputDecoration(
-                          hintText: "Male or Female or Other",
+                          hintText: "Enter either Male, Female or Other",
                           filled: true,
                           fillColor: Colors.white70,
                         ),

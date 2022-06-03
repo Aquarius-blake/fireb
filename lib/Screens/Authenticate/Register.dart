@@ -43,7 +43,7 @@ class _RegisterState extends State<Register> {
                   Icon(
                     Icons.forum,
                     color: Colors.white70,
-                    size: 180,
+                    size: 90,
                   ),
                   TextFormField(
                     onChanged: (val){

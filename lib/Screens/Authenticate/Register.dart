@@ -20,6 +20,7 @@ class _RegisterState extends State<Register> {
 
   final AuthService _auth= AuthService();
   final _formKey =GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,6 +49,7 @@ class _RegisterState extends State<Register> {
 color: Colors.lightBlueAccent[100],
               child: SingleChildScrollView(
                 child: Form(
+                  key: _formKey,
                   child: Column(
                     children: <Widget>[
                       SizedBox(height:20 ,),

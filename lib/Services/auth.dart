@@ -42,7 +42,13 @@ class AuthService{
 
 
   //Register as new User with email and password
+Future RegisterNewUserEmail(String email,String password)async{
+    try{}
+    catch(e){
 
+    }
+
+}
 
 
   //sign out

@@ -76,6 +76,7 @@ class _SinginState extends State<Singin> {
                   ),
                   SizedBox(height: 20,),
                   TextFormField(
+
                     validator: (val)=>val!.isEmpty ? "Please Enter A Valid Password" : null,
                     onChanged: (val){
                       setState(() {
@@ -84,11 +85,12 @@ class _SinginState extends State<Singin> {
                     },
                     obscureText: true,
                     decoration: InputDecoration(
+
                       hintText: "Enter Password",
                       filled: true,
                       fillColor: Colors.white70,
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(100.0),
 
                       ),
                       focusedBorder: OutlineInputBorder(
@@ -139,6 +141,7 @@ class _SinginState extends State<Singin> {
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
+
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0)
                               )

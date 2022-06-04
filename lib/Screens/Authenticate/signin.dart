@@ -94,9 +94,19 @@ class _SinginState extends State<Singin> {
 
                             ),
                             onPressed: () async {
-                            print(email);
-                            print(password);
-
+                              if(_formKey.currentState?.validate()!=null){
+                                print(email);
+                                dynamic result=await _auth.RegisterNewUserEmail(email, password);
+                                if (result==null){
+                                  setState(() {
+                                    error="Registeration Failed";
+                                  }
+                                  );
+                                }else{
+                                  print("success");
+                                  Navigator.pop(context);
+                                }
+                              }
                             },
 
                             child: Padding(

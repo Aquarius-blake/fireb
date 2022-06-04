@@ -19,6 +19,11 @@ class _RegisterState extends State<Register> {
   String Gender="";
   String error="";
 
+  //todo:make error disappear after a fixed time
+  Future Eload()async{
+
+  }
+
   final AuthService _auth= AuthService();
   final _formKey =GlobalKey<FormState>();
 

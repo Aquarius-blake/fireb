@@ -67,6 +67,7 @@ class _SinginState extends State<Singin> {
                   ),
                   SizedBox(height: 20,),
                   TextFormField(
+                    validator: (val)=>val!.isEmpty ? "Please Enter A Valid Email" : null,
                     onChanged: (val){
                       setState(() {
                         password=val;

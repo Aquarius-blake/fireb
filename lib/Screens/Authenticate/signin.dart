@@ -96,14 +96,15 @@ class _SinginState extends State<Singin> {
                             onPressed: () async {
                               if(_formKey.currentState?.validate()!=null){
                                 print(email);
-                               /* if (result==null){
+                                dynamic result= await _auth.SigninWithEmail(email, password);
+                                if (result==null){
                                   setState(() {
                                     error="Registeration Failed";
                                   }
                                   );
                                 }else{
                                   print("success");
-                                }*/
+                                }
                               }
                             },
 

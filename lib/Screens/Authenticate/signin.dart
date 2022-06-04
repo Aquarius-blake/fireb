@@ -167,10 +167,12 @@ class _SinginState extends State<Singin> {
                             )
                         ),
                       ),
-                      Text(
-                          error,
-                        style: TextStyle(
-                          color: Colors.red,
+                      Center(
+                        child: Text(
+                            error,
+                          style: TextStyle(
+                            color: Colors.red,
+                          ),
                         ),
                       )
 

@@ -124,6 +124,10 @@ class _RegisterState extends State<Register> {
                             borderSide: BorderSide(color: Colors.redAccent),
                             borderRadius: BorderRadius.circular(10.0),
                           ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+
+                          ),
                         ),
 
                         style: TextStyle(
@@ -147,6 +151,10 @@ class _RegisterState extends State<Register> {
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(color: Colors.redAccent),
                             borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+
                           ),
                         ),
                         style: TextStyle(

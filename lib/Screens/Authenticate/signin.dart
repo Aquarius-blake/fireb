@@ -167,6 +167,7 @@ class _SinginState extends State<Singin> {
                             )
                         ),
                       ),
+                      SizedBox(height: 5.0,),
                       Center(
                         child: Text(
                             error,

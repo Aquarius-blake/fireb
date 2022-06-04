@@ -59,6 +59,9 @@ class _SinginState extends State<Singin> {
                       hintText: "Enter Email Address",
                       filled: true,
                       fillColor: Colors.white70,
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0)
+                      ),
                     ),
 
                     style: TextStyle(

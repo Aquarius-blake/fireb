@@ -39,6 +39,17 @@ class AuthService{
 
 
   //sign in with email
+Future SigninWithEmail(String email,String password)async{
+    try{
+
+    }catch(e){
+      print(e.toString());
+      return null;
+    }
+
+
+}
+
 
 
   //Register as new User with email and password

@@ -49,6 +49,7 @@ class _SinginState extends State<Singin> {
                     size: 180,
                   ),
                   TextFormField(
+                    validator: (val)=>val!.isEmpty ? "Please Enter A Valid Email" : null,
                     onChanged: (val){
                       setState(() {
                         email=val;

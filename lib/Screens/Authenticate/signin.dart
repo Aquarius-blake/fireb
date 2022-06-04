@@ -90,6 +90,10 @@ class _SinginState extends State<Singin> {
                         borderRadius: BorderRadius.circular(10.0),
 
                       ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.redAccent),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                     ),
                     style: TextStyle(
 

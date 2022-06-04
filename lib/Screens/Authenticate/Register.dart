@@ -76,6 +76,10 @@ class _RegisterState extends State<Register> {
                           hintText: "Enter Full Name",
                           filled: true,
                           fillColor: Colors.white70,
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.redAccent),
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
                         ),
 
                         style: TextStyle(
@@ -94,6 +98,10 @@ class _RegisterState extends State<Register> {
                           hintText: "Enter Username",
                           filled: true,
                           fillColor: Colors.white70,
+                          focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.redAccent),
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
                         ),
 
                         style: TextStyle(

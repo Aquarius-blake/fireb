@@ -11,6 +11,7 @@ class Singin extends StatefulWidget {
 class _SinginState extends State<Singin> {
 
   final AuthService _auth= AuthService();
+  final _formKey =GlobalKey<FormState>();
 
   //Text field States
   String email="";
@@ -37,6 +38,7 @@ class _SinginState extends State<Singin> {
         child: Container(
           child: SingleChildScrollView(
             child: Form(
+              key: _formKey,
               child: Column(
                 children: <Widget>[
                   SizedBox(height:30 ,),

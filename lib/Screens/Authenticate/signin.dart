@@ -63,6 +63,9 @@ class _SinginState extends State<Singin> {
                         borderRadius: BorderRadius.circular(10.0),
 
                       ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.redAccent)
+                      ),
                     ),
 
                     style: TextStyle(
@@ -98,6 +101,7 @@ class _SinginState extends State<Singin> {
                     children: <Widget>[
                       Center(
                         child: ElevatedButton(
+
                             style: ButtonStyle(
 
                             ),

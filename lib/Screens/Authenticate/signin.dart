@@ -1,4 +1,5 @@
 import 'package:fire/Services/auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Singin extends StatefulWidget {
@@ -137,8 +138,10 @@ class _SinginState extends State<Singin> {
                       ),
                       Center(
                         child: ElevatedButton(
-                            style: ButtonStyle(
-
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0)
+                              )
                             ),
                             onPressed: () async {
                               dynamic result= await _auth.Signguest();

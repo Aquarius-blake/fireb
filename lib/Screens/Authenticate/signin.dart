@@ -16,6 +16,7 @@ class _SinginState extends State<Singin> {
   //Text field States
   String email="";
   String password="";
+  String error="";
 
   @override
   Widget build(BuildContext context) {

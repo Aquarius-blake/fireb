@@ -64,7 +64,8 @@ class _SinginState extends State<Singin> {
 
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.redAccent)
+                        borderSide: BorderSide(color: Colors.redAccent),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
                     ),
 

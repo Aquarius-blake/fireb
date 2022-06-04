@@ -192,7 +192,7 @@ class _RegisterState extends State<Register> {
 
                                 ),
                                 onPressed: () async {
-                                  if(_formKey.currentState?.validate()==null){
+                                  if(_formKey.currentState?.validate()!=null){
                                     print(email);
                                     dynamic result=await _auth.RegisterNewUserEmail(email, password);
                                     if (result==null){
@@ -202,6 +202,7 @@ class _RegisterState extends State<Register> {
                                       );
                                     }else{
                                       print("success");
+                                      Navigator.pop(context);
                                     }
                                   }
                                 },

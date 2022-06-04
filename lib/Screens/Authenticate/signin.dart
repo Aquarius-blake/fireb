@@ -104,7 +104,6 @@ class _SinginState extends State<Singin> {
                                   );
                                 }else{
                                   print("success");
-                                  Navigator.pop(context);
                                 }
                               }
                             },

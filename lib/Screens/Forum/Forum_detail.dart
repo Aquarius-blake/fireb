@@ -11,7 +11,9 @@ class _ForumdetailState extends State<Forumdetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+appBar: AppBar(
 
+),
     );
   }
 }

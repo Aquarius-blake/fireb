@@ -91,7 +91,12 @@ class _HomeState extends State<Home> {
                   thickness: 3,
                 ),
                 Center(
-                  child: Text(""),
+                  child: Text(
+                      "",
+                    style: TextStyle(
+
+                    ),
+                  ),
                 )
 
               ],

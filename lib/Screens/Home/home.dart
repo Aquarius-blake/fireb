@@ -90,6 +90,9 @@ class _HomeState extends State<Home> {
                   color: Colors.black,
                   thickness: 3,
                 ),
+                Center(
+                  child: Text(""),
+                )
 
               ],
             ),

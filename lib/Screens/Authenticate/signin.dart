@@ -61,12 +61,12 @@ class _SinginState extends State<Singin> {
                       filled: true,
                       fillColor: Colors.white70,
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(100.0),
 
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.redAccent),
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(100.0),
                       ),
                     ),
 
@@ -90,12 +90,12 @@ class _SinginState extends State<Singin> {
                       filled: true,
                       fillColor: Colors.white70,
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(100.0),
 
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.redAccent),
-                        borderRadius: BorderRadius.circular(10.0),
+                        borderRadius: BorderRadius.circular(100.0),
                       ),
                     ),
                     style: TextStyle(

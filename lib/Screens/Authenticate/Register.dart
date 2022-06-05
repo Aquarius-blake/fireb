@@ -51,10 +51,13 @@ class _RegisterState extends State<Register> {
             color: Colors.white,
             padding: EdgeInsets.all(8.0),
             child: Container(
+
               padding: EdgeInsets.all(6.0),
               color: Colors.lightBlueAccent[100],
               child: SingleChildScrollView(
+
                 child: Form(
+
                   key: _formKey,
                   child: Column(
                     children: <Widget>[

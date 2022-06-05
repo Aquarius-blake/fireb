@@ -122,7 +122,7 @@ class _SinginState extends State<Singin> {
                                 dynamic result= await _auth.SigninWithEmail(email, password);
                                 if (result==null){
                                   setState(() {
-                                    error="Sigin Failed, Check Sign in details";
+                                    error="Sigin Failed, Check Signin details";
                                   }
                                   );
                                 }else{

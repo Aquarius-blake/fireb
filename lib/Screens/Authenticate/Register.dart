@@ -217,6 +217,7 @@ class _RegisterState extends State<Register> {
                                   {
                                     print("Success");
                                     print(result.UID);
+                                    Navigator.pop(context);
                                   }
 
                                 },

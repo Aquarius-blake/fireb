@@ -13,7 +13,7 @@ class _ForumdetailState extends State<Forumdetail> {
     return Scaffold(
 appBar: AppBar(
 title: Row(
-children: [
+children: <Widget>[
 
 ],
 ),

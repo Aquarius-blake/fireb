@@ -110,8 +110,11 @@ class _SinginState extends State<Singin> {
                       Center(
                         child: ElevatedButton(
 
-                            style: ButtonStyle(
+                            style: ElevatedButton.styleFrom(
 
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0)
+                                )
                             ),
                             onPressed: () async {
                               if(_formKey.currentState?.validate()!=null){

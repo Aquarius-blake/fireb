@@ -83,7 +83,10 @@ class _HomeState extends State<Home> {
                   onTap: () async{
                     await _auth.SignOut();
                   },
-                ), ],
+                ),
+                SizedBox(height: 20.0,),
+
+              ],
             ),
           ),
         ),

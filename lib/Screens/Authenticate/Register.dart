@@ -259,7 +259,7 @@ class _RegisterState extends State<Register> {
 
                                     style: TextStyle(
 
-                                      color: Colors.red,
+
                                     ),
 
                                   ),
@@ -269,7 +269,7 @@ class _RegisterState extends State<Register> {
                           Center(
                             child: Text(error,
                               style: TextStyle(
-
+                                color: Colors.red,
                               ),
                             ),
                           )

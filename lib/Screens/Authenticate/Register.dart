@@ -233,8 +233,11 @@ class _RegisterState extends State<Register> {
                           Center(
                             child: ElevatedButton(
 
-                                style: ButtonStyle(
+                                style: ElevatedButton.styleFrom(
 
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(100.0)
+                                    )
                                 ),
                                 onPressed: () async {
                                   if(_formKey.currentState?.validate()!=null){

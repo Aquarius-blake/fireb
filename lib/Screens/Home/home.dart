@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
 
                   ),
                   onTap: () async{
-
+Navigator.pushNamed(context, '/Profile');
                   },
                 ),
                 SizedBox(height: 40,),

@@ -175,8 +175,11 @@ class _SinginState extends State<Singin> {
                       ),
                       Center(
                         child: ElevatedButton(
-                            style: ButtonStyle(
+                            style: ElevatedButton.styleFrom(
 
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(100.0)
+                                )
                             ),
                             onPressed: () async {
                              Navigator.pushNamed(context, '/register');

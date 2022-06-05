@@ -130,10 +130,10 @@ class _RegisterState extends State<Register> {
                           fillColor: Colors.white70,
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(color: Colors.redAccent),
-                            borderRadius: BorderRadius.circular(10.0),
+                            borderRadius: BorderRadius.circular(100.0),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
+                            borderRadius: BorderRadius.circular(100.0),
 
                           ),
                         ),

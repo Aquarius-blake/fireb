@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
                 ),
                 SizedBox(height: 40,),
                 ListTile(
-                  leading: Icon(LineIcons.eject,
+                  leading: Icon(LineIcons.appNet,
                     color: Colors.black, size:50.0,),
                   title: Text(
                     "Sign Out",

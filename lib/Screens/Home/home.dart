@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
                 ),
                 Center(
                   child: Text(
-                    "POWERED by Flutter",
+                    "POWERED by Firebase",
                     style: TextStyle(
                       fontSize: 22.0,
                       fontWeight: FontWeight.bold,

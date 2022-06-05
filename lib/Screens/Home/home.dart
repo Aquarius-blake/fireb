@@ -42,9 +42,9 @@ class _HomeState extends State<Home> {
                         CircleAvatar(
                           radius: 60.0,
                         ),
-Center(
-  child: Text("Username"),
-),
+                        Center(
+                          child: Text("Username"),
+                        ),
                       ],
                     )
                 ),

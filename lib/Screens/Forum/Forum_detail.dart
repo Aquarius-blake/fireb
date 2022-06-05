@@ -12,7 +12,9 @@ class _ForumdetailState extends State<Forumdetail> {
   Widget build(BuildContext context) {
     return Scaffold(
 appBar: AppBar(
+title: Row(
 
+),
 ),
     );
   }

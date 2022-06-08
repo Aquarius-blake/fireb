@@ -12,12 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final  AuthService _auth=AuthService();
   @override
-  /*void initState()async {
-    // TODO: implement initState
-    dynamic result= await _auth.Signguest();
-    
- 
-  }*/
+
 
   @override
   Widget build(BuildContext context) {

@@ -16,8 +16,8 @@ final user =Provider.of<User1?>(context);
 print(user);
 
 
-    /*Checks if a user is signed in and returns the appropriate screen
-    * */
+    //Checks if a user is signed in and returns the appropriate screen
+
 if (user==null){
     return Authenticate();
   }

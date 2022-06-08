@@ -16,7 +16,8 @@ final user =Provider.of<User1?>(context);
 print(user);
 
 
-    //todo:return home or authenticate
+    /*Checks if a user is signed in and returns the appropriate screen
+    * */
 if (user==null){
     return Authenticate();
   }

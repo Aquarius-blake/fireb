@@ -2,7 +2,7 @@ import 'package:fire/Services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
-
+//Home Screen
 class Home extends StatefulWidget {
 
   @override

@@ -28,6 +28,7 @@ late  final bool guest;
     try{
       UserCredential result= await _auth.signInAnonymously();
       User? user = result.user;
+      guest=true;
       return _userfirebase(user);
     }catch(e){
       print(e.toString());

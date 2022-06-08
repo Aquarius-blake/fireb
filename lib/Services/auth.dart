@@ -1,17 +1,20 @@
 import 'package:fire/Models/Users1.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+
 
 class AuthService{
 //Initialization
   final FirebaseAuth _auth = FirebaseAuth.instance;
   late  final bool guest;
+  late  final AssetImage profile="Assets/hac.jpg" as AssetImage;
 
 
 //Convert to Custom User
   User1? _userfirebase(User? user){
     if (user!=null) {
       if(guest){
-        return User1(UID: user.uid,Guest: guest);
+        return User1(UID: user.uid,Guest: guest,profilepic: profile);
       }else{
         return User1(UID: user.uid,Guest: false);
       }

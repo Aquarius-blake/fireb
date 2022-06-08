@@ -10,17 +10,16 @@ class Wrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-final user =Provider.of<User1?>(context);
+    final user =Provider.of<User1?>(context);
 
-print(user);
+    print(user);
 
     //Checks if a user is signed in and returns the appropriate screen
-
-if (user==null){
-    return Authenticate();
-  }
-else{
-  return Home();
-}
+    if (user==null){
+      return Authenticate();
+    }
+    else{
+      return Home();
+    }
   }
 }

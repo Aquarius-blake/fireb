@@ -9,7 +9,10 @@ late  final bool guest;
   User1? _userfirebase(User? user){
     if (user!=null) {
       if(guest){
-      return User1(UID: user.uid,Guest: guest);}
+      return User1(UID: user.uid,Guest: guest);
+      }else{
+        return User1(UID: user.uid,Guest: false);
+      }
     } else {
       return null;
     }

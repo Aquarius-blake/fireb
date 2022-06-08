@@ -8,7 +8,8 @@ late  final bool guest;
 //Convert to Custom User
   User1? _userfirebase(User? user){
     if (user!=null) {
-      return User1(UID: user.uid);
+      if(guest){
+      return User1(UID: user.uid,Guest: guest);}
     } else {
       return null;
     }

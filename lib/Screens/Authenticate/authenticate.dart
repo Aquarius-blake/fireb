@@ -13,8 +13,6 @@ class _AuthenticateState extends State<Authenticate> {
 
   bool showSignin=true;
 
-
-
   @override
   Widget build(BuildContext context) {
 

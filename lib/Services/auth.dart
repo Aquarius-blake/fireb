@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class AuthService{
 
   final FirebaseAuth _auth=FirebaseAuth.instance;
-
+late  final bool guest;
 //Convert to Custom User
   User1? _userfirebase(User? user){
     if (user!=null) {

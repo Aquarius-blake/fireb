@@ -1,3 +1,5 @@
+
+
 import 'package:fire/Models/Users1.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +24,8 @@ class AuthService{
       return null;
     }
   }
+
+
 
   //auth change user stream
   Stream<User1?> get user {

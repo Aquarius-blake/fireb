@@ -181,7 +181,8 @@ class _SinginState extends State<Singin> {
                               shadowColor: Colors.black,
                               primary: Colors.white,
                                 side: BorderSide(
-                                  color: Colors.lightBlueAccent,
+                                  color: Colors.blue,
+                                  width: 2.0,
                                 ),
 
                                 shape: RoundedRectangleBorder(

@@ -147,7 +147,7 @@ class _SinginState extends State<Singin> {
                                 elevation: 7.0,
                                 shadowColor: Colors.black,
                                 side: BorderSide(
-                                  color: Colors.white30,
+                                  color: Colors.white70,
                                   width: 2.0,
                                 ),
                               shape: RoundedRectangleBorder(

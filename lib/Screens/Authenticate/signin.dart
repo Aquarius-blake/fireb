@@ -200,7 +200,7 @@ class _SinginState extends State<Singin> {
 
                                 "Register",
 style: TextStyle(
-  color: Colors.lightBlueAccent,
+  color: Colors.blue,
 ),
 
 

@@ -195,7 +195,7 @@ class _SinginState extends State<Singin> {
                             },
 
                             child: Padding(
-                              padding: const EdgeInsets.fromLTRB(100.0,10,100.0,10.0),
+                              padding: const EdgeInsets.fromLTRB(100.0,20,100.0,20.0),
                               child: Text(
 
                                 "Register",

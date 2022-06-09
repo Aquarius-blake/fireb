@@ -46,6 +46,7 @@ class _HomeState extends State<Home> {
                  backgroundImage: AssetImage("Assets/hacjpg"),
                         ),
                         Center(
+
                           child: Text("Username"),
                         ),
                       ],

@@ -176,6 +176,7 @@ class _SinginState extends State<Singin> {
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
 
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(100.0)

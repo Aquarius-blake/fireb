@@ -146,7 +146,7 @@ class _SinginState extends State<Singin> {
                             )
                         ),
                       ),
-
+SizedBox(height: 10,),
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
@@ -184,6 +184,7 @@ class _SinginState extends State<Singin> {
                             )
                         ),
                       ),
+                      SizedBox(height: 10,),
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(

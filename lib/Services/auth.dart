@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class AuthService{
 //Initialization
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  late  final bool guest;
+     bool guest=false;
   late  final AssetImage profile="Assets/hac.jpg" as AssetImage;
 
 

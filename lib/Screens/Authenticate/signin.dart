@@ -111,7 +111,12 @@ class _SinginState extends State<Singin> {
                         child: ElevatedButton(
 
                             style: ElevatedButton.styleFrom(
-
+                                elevation: 7.0,
+                                shadowColor: Colors.black,
+                                side: BorderSide(
+                                  color: Colors.white70,
+                                  width: 2.0,
+                                ),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(100.0)
                                 )
@@ -141,6 +146,7 @@ class _SinginState extends State<Singin> {
                             )
                         ),
                       ),
+
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(

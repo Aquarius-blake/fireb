@@ -147,7 +147,7 @@ class _SinginState extends State<Singin> {
                             )
                         ),
                       ),
-SizedBox(height: 10,),
+                      SizedBox(height: 10,),
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
@@ -158,9 +158,9 @@ SizedBox(height: 10,),
                                   color: Colors.white70,
                                   width: 2.0,
                                 ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(100.0)
-                              )
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(100.0)
+                                )
                             ),
                             onPressed: () async {
                               dynamic result= await _auth.Signguest();
@@ -190,9 +190,9 @@ SizedBox(height: 10,),
                       Center(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              elevation: 6.0,
-                              shadowColor: Colors.black,
-                              primary: Colors.white,
+                                elevation: 6.0,
+                                shadowColor: Colors.black,
+                                primary: Colors.white,
                                 side: BorderSide(
                                   color: Colors.blue,
                                   width: 2.0,
@@ -203,7 +203,7 @@ SizedBox(height: 10,),
                                 )
                             ),
                             onPressed: () async {
-                             Navigator.pushNamed(context, '/register');
+                              Navigator.pushNamed(context, '/register');
 
                             },
 
@@ -212,9 +212,9 @@ SizedBox(height: 10,),
                               child: Text(
 
                                 "Sign Up",
-style: TextStyle(
-  color: Colors.blue,
-),
+                                style: TextStyle(
+                                  color: Colors.blue,
+                                ),
 
 
                               ),
@@ -224,7 +224,7 @@ style: TextStyle(
                       SizedBox(height: 5.0,),
                       Center(
                         child: Text(
-                            error,
+                          error,
                           style: TextStyle(
                             color: Colors.red,
                           ),

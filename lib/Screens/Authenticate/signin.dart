@@ -113,7 +113,7 @@ class _SinginState extends State<Singin> {
                             style: ElevatedButton.styleFrom(
                                 elevation: 7.0,
                                 shadowColor: Colors.black,
-                                primary: Colors.blue[500],
+                                primary: Colors.blue[400],
                                 side: BorderSide(
                                   color: Colors.white70,
                                   width: 2.0,
@@ -153,6 +153,7 @@ SizedBox(height: 10,),
                             style: ElevatedButton.styleFrom(
                                 elevation: 7.0,
                                 shadowColor: Colors.black,
+                                primary: Colors.blue[400],
                                 side: BorderSide(
                                   color: Colors.white70,
                                   width: 2.0,

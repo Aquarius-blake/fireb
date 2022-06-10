@@ -272,7 +272,7 @@ class _RegisterState extends State<Register> {
                                 child: Padding(
                                   padding: const EdgeInsets.fromLTRB(100.0,0,100.0,0),
                                   child: Text(
-                                    "Sign Up",
+                                    "Register New Account",
 
                                     style: TextStyle(
 color: Colors.blue,

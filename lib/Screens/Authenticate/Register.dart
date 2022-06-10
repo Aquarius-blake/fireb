@@ -275,7 +275,7 @@ class _RegisterState extends State<Register> {
                                     "Register",
 
                                     style: TextStyle(
-
+color: Colors.blue,
 
                                     ),
 

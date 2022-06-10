@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
                       children: <Widget>[
                         CircleAvatar(
                           radius: 60.0,
-                          backgroundImage: AssetImage("Assets/hac.jpg"),
+                          backgroundImage: AssetImage('Assets/hac.jpg'),
                         ),
                         Center(
 

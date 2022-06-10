@@ -241,6 +241,13 @@ class _RegisterState extends State<Register> {
                             child: ElevatedButton(
 
                                 style: ElevatedButton.styleFrom(
+                                    elevation: 6.0,
+                                    shadowColor: Colors.black,
+                                    primary: Colors.white,
+                                    side: BorderSide(
+                                      color: Colors.blue,
+                                      width: 2.0,
+                                    ),
 
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(100.0)
